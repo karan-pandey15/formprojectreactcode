@@ -1,38 +1,458 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* All container style start here   */
+
+
+.styleContainer{
+  margin-top: 50px;
+  background-color: aliceblue;
+  height: 70vh;
+  width: 50vw;
+  border-radius: 10px;
+  background: linear-gradient(blue,black,blue);
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.styleContainer2{
+  margin: 100px auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  height: 40vh;
+  width: 40vw;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+}
+.styleContainer3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: aliceblue;
+  height: 50vh;
+  width: 60vw;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.heighthun{
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home page style start here  */
+
+.homeContainer{
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.containerImg{
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  margin-left: 100px;
+}
+.homeContainers{
+   width: 80vw;
+   height: 50vh;
+   display: flex;
+   justify-content: space-around;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centerContainer{
+  position: relative;
+  left: 40%;
+  transform: translate(-40%,0);
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeContainers h2{
+  color: rgb(28, 147, 222);
+}
+.homeContainers p{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Navbar style start here  */
+
+.logo{
+  color: rgb(217, 216, 234);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 5px;
+}
+.logo span{
+  color: rgb(222, 177, 177);
+}
+
+.navLink li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 0 120px;
+}
+.linksItem{
+  background-color: #ef4371;
+}
+.footer{
+ bottom: 0;
+ position: fixed;
+ background-color:  #ef4371;  
+}
+
+/* Login page style start here  */
+
+.inputStyle{
+  height: 40px;
+  width: 30vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-family: bolder;
+  font-weight: bolder;
+  color: blue;
+  
+
+}
+.inputStyle1{
+  height: 40px;
+  width: 30vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-family: bolder;
+  font-weight: bolder;
+  color: blue;
+  margin: 14px 0;
+  
+}
+.passIcon{
+  font-size: 1.8rem;
+}
+.emailIcon{
+  font-size: 1.8rem;
+}
+.icon{
+  font-size: 1.6rem;
+}
+.refLink{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+/* Details page style start here   */
+
+.imgDiv{
+  height: 60vh;
+  opacity: 0.8;
+}
+.containerLogin{
+  background: hsl(304, 73%, 62%);
+  opacity: 0.5;
+}
+.loginafter{
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 30px auto;
+  width: 40vw;
+  z-index: 10;
+}
+  
+.loginafter p{
+  color: black;
+  font-family: sans-serif;
+}
+.hw{
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.firimg{
+  border-radius: 30px;
+  height: 250px;
+  width: 300px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.jsContent{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+}
+.givecol{
+  background: #ef4371;
+}
+.btm{
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  
+}
+
+
+/* Media query style start here  */
+
+@media screen and (max-width: 920px) {
+  .homeContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+
+    .styleContainer{
+      height: 60vh;
+    }
+    .homeContainers{
+      height: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+    .containerImg{
+    height: 300px;
+    width: 400px;
+        margin: 20px 15px;
+    }
+    
+  .homeContainer h2{
+     font-size: 1.8rem;
+  }
+  
+  .homeContainer button{
+      font-size: 18px;
+  }
+  .homeContainer p{
+      font-size: 14px;
+      margin: 5px 2px;
+  }
+  .containerImg{    
+      height: 200px;
+      width: 300px;
+      margin: 20px 15px;
+  }
+  .homeContainers h2{
+      font-size: 1.8rem;
+  }
+  .homeContainers p{
+      font-size: 14px;
+      margin: 5px 2px;
+  }
+  .inputStyle1{
+      margin: 25px 0;
+  }
+
+}
+
+  
+@media screen and (max-width: 755px) {
+  .containerImg{        
+      height: 140px;
+      width: 200px;
+      margin: 10px 15px;
+      }
+      .homeContainers{
+          height: 50vh;
+      }
+      .styleContainer{
+          height: 60vh;
+      }
+
+  .styleContainer2{
+      width: 80vw;
+  }
+  .inputStyle{
+      width: 60vw;
+      margin: 30px 5px;
+
+  }
+  .inputStyle1{
+      width: 60vw;
+      margin: 30px 0;
+
+  }
+  .styleContainer{
+      height: 80vh;
+      width: 80vw;
+  }
+  .loginafter{
+      height: 50vh;
+      margin: 20px auto;
+      width: 40vw;
+      z-index: 10;
+  }
+      
+  .loginafter p{
+      color: black;
+      font-family: sans-serif;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .homeContainers{
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+ }
+ .gap{
+  height: 200vh;
+ }
+ .tImg{
+   width: 350px;
+   height: 180px;
+ }
+
+ .imgDiv img{
+  height: 50vh;
+ }
+ .loginafter h1{
+  font-size: 30px
+}
+.loginafter p{
+  font-size: 14px;
+}
+
+ 
+.inputStyle1{
+  margin: 20px 0;
+}
+}
+
+@media screen and (max-width: 500px){
+  .loginafter h1{
+      font-size: 20px
+  }
+  .loginafter p{
+      font-size: 12px;
+  }
+  .loginafter{
+      height: 50vh ;
+      width: 50vw;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .homeContainer h2{
+     font-size: 1.2rem;
+  }
+  .styleContainer{
+      height: 65vh;
+  }
+
+  .homeContainers{
+       display: flex;
+       flex-direction: column;
+       height: 50vh;
+
+  }
+  .homeContainer button{
+      font-size: 12px;
+  }
+  .homeContainer p{
+      font-size: 12px;
+      margin: 3px 2px;
+  }
+  .homeContainers h2{
+      font-size: 1.2rem;
+  }
+  .homeContainers p{
+      font-size: 12px ;
+  }
+  .containerImg{
+      
+      height: 180px;
+      width: 250px;
+      margin: 10px 15px;
+  
+      }
+  .styleContainer2{
+      width: 80vw;
+  }
+  .inputStyle{
+      width: 70vw;
+      margin: 20px 0;
+  }
+  .footer h3{
+      font-size: 1rem;
+  } 
+  .imgDiv img{
+      height: 70vh;
+     }
+  .loginafter h1{
+      font-size: 30px
+  }
+  .loginafter p{
+      font-size: 12px;
+      font-family: sans-serif;
+      font-weight: bolder;
+  }
+  .jsContent{
+    height: 200px;
+    width: 200px;
   }
 }
+
+@media screen and (max-width: 400px) {
+ .homeContainers {
+       height: 60vh;
+ }
+  .homeContainers h2{
+      font-size: 20px;
+  }
+  .containerImg{
+      height: 140px;
+      width: 200px;
+  }
+  .inputStyle1{
+      font-size: 14px;
+      height: 30px;
+  }
+  .styleContainer2{
+      height: 60vh;
+  }
+  
+}
+
+
+@media screen and (max-width: 380px) {
+  .loginafter h1{
+      font-size: 24px
+  }
+  .loginafter p{
+      font-size: 10px;
+      font-family: sans-serif;
+      font-weight: bolder;
+  }
+  .inputStyle1{
+      font-size: 14px;
+      height: 30px;
+  }
+  .styleContainer{
+      height: 80vh;
+  }
+  .styleContainer2{
+      height: 60vh;
+  }
+  
+ }
+ 
